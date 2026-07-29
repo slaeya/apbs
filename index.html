@@ -44,69 +44,74 @@
     </section>
 
 <!-- The "Process" Section (Bosanac Inspired with Images) -->
-<!-- The "Process" Section with Mobile Scroll Trigger -->
-    <section class="py-32 px-6 max-w-7xl mx-auto">
+    <section class="py-32 px-6 max-w-7xl mx-auto overflow-hidden">
         <div class="text-center mb-24">
             <h2 class="text-3xl font-bold uppercase tracking-[0.3em] mb-4">The APBS Journey</h2>
-            <p class="text-slate-400 font-light tracking-widest uppercase text-xs italic">Precision from start to finish</p>
+            <p class="text-slate-400 font-light tracking-widest uppercase text-[10px] italic">Precision from start to finish</p>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-24">
             
-            <!-- Step 01 -->
+            <!-- Step 01: Discovery -->
             <div class="process-card group">
-                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1503387762-592dea58ef23?q=80&w=1000&auto=format&fit=crop" 
+                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100 shadow-sm relative">
+                    <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=800" 
                          alt="Discovery" 
-                         class="process-img w-full h-full object-cover grayscale md:group-hover:grayscale-0 transition duration-1000">
+                         class="process-img w-full h-full object-cover grayscale md:group-hover:grayscale-0 transition duration-1000 ease-in-out transform">
                 </div>
-                <span class="text-xs font-bold text-orange-600 tracking-widest uppercase">Step 01</span>
-                <h3 class="text-xl font-bold uppercase mt-2 mb-4">Discovery</h3>
-                <p class="text-slate-600 text-sm leading-relaxed font-light">We collaborate with you or your project manager to understand the lighting, specs, and level of finish required for the site.</p>
+                <span class="text-[10px] font-bold text-orange-600 tracking-[0.3em] uppercase">Step 01</span>
+                <h3 class="text-xl font-bold uppercase mt-3 mb-4 tracking-tight text-slate-800">Discovery</h3>
+                <p class="text-slate-500 text-sm leading-relaxed font-light">We collaborate with you or your project manager to understand the lighting, architectural specs, and level of finish required for the site.</p>
             </div>
 
-            <!-- Step 02 -->
+            <!-- Step 02: Craft -->
             <div class="process-card group">
-                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7edd?q=80&w=1000&auto=format&fit=crop" 
+                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100 shadow-sm relative">
+                    <img src="https://images.pexels.com/photos/8005397/pexels-photo-8005397.jpeg?auto=compress&cs=tinysrgb&w=800" 
                          alt="Craft" 
-                         class="process-img w-full h-full object-cover grayscale md:group-hover:grayscale-0 transition duration-1000">
+                         class="process-img w-full h-full object-cover grayscale md:group-hover:grayscale-0 transition duration-1000 ease-in-out transform">
                 </div>
-                <span class="text-xs font-bold text-orange-600 tracking-widest uppercase">Step 02</span>
-                <h3 class="text-xl font-bold uppercase mt-2 mb-4">Craft</h3>
-                <p class="text-slate-600 text-sm leading-relaxed font-light">Our fixing and stopping crews execute with meticulous detail, using premium compounds to prepare a flawless canvas.</p>
+                <span class="text-[10px] font-bold text-orange-600 tracking-[0.3em] uppercase">Step 02</span>
+                <h3 class="text-xl font-bold uppercase mt-3 mb-4 tracking-tight text-slate-800">Craft</h3>
+                <p class="text-slate-500 text-sm leading-relaxed font-light">Our fixing and stopping crews execute with meticulous detail, using premium compounds to prepare a flawless, paint-ready canvas.</p>
             </div>
 
-            <!-- Step 03 -->
+            <!-- Step 03: Delivery -->
             <div class="process-card group">
-                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1000&auto=format&fit=crop" 
+                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100 shadow-sm relative">
+                    <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800" 
                          alt="Delivery" 
-                         class="process-img w-full h-full object-cover grayscale md:group-hover:grayscale-0 transition duration-1000">
+                         class="process-img w-full h-full object-cover grayscale md:group-hover:grayscale-0 transition duration-1000 ease-in-out transform">
                 </div>
-                <span class="text-xs font-bold text-orange-600 tracking-widest uppercase">Step 03</span>
-                <h3 class="text-xl font-bold uppercase mt-2 mb-4">Delivery</h3>
-                <p class="text-slate-600 text-sm leading-relaxed font-light">The vision brought to life. We deliver a paint-ready finish that stands up to the most critical architectural lighting.</p>
+                <span class="text-[10px] font-bold text-orange-600 tracking-[0.3em] uppercase">Step 03</span>
+                <h3 class="text-xl font-bold uppercase mt-3 mb-4 tracking-tight text-slate-800">Delivery</h3>
+                <p class="text-slate-500 text-sm leading-relaxed font-light">The vision brought to life. We deliver a high-end finish that stands up to the most critical architectural lighting and inspection.</p>
             </div>
 
         </div>
     </section>
 
-    <!-- Mobile Scroll Trigger Script -->
+    <!-- Center-Screen Mobile Script -->
     <script>
         const observerOptions = {
             root: null,
-            rootMargin: '-30% 0% -30% 0%', // Only triggers when image is in the middle 40% of the screen
-            threshold: 0.1
+            rootMargin: '-20% 0% -20% 0%', // Actively triggers in the center 60% of the screen
+            threshold: 0.2
         };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 const img = entry.target.querySelector('.process-img');
-                if (entry.isIntersecting) {
-                    img.classList.remove('grayscale');
-                } else {
-                    img.classList.add('grayscale');
+                
+                // Only use the scroll-to-color effect on mobile devices
+                if (window.innerWidth < 768) {
+                    if (entry.isIntersecting) {
+                        img.classList.remove('grayscale');
+                        img.style.transform = "scale(1.03)"; // Very subtle zoom
+                    } else {
+                        img.classList.add('grayscale');
+                        img.style.transform = "scale(1)";
+                    }
                 }
             });
         }, observerOptions);
@@ -114,8 +119,7 @@
         document.querySelectorAll('.process-card').forEach(card => {
             observer.observe(card);
         });
-    </script>
-    
+    </script>    
     <!-- Reviews Section (The Request) -->
     <section class="bg-slate-50 py-32 px-6">
         <div class="max-w-5xl mx-auto">
