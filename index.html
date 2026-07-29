@@ -44,52 +44,78 @@
     </section>
 
 <!-- The "Process" Section (Bosanac Inspired with Images) -->
+<!-- The "Process" Section with Mobile Scroll Trigger -->
     <section class="py-32 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-24">
             <h2 class="text-3xl font-bold uppercase tracking-[0.3em] mb-4">The APBS Journey</h2>
             <p class="text-slate-400 font-light tracking-widest uppercase text-xs italic">Precision from start to finish</p>
         </div>
         
-        <div class="grid md:grid-cols-3 gap-12 lg:gap-20 text-left">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-20">
             
             <!-- Step 01 -->
-            <div class="group">
-                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100">
-                    <img src="https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&q=80&w=800" 
-                         alt="Discovery Phase" 
-                         class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700 scale-105 group-hover:scale-100">
+            <div class="process-card group">
+                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1503387762-592dea58ef23?q=80&w=1000&auto=format&fit=crop" 
+                         alt="Discovery" 
+                         class="process-img w-full h-full object-cover grayscale md:group-hover:grayscale-0 transition duration-1000">
                 </div>
                 <span class="text-xs font-bold text-orange-600 tracking-widest uppercase">Step 01</span>
-                <h3 class="text-xl font-bold uppercase mt-2 mb-4 tracking-tight">Discovery</h3>
-                <p class="text-slate-600 text-sm leading-relaxed font-light">We collaborate with you or your project manager to understand the lighting, specs, and level of finish required for the specific architectural demands of the site.</p>
+                <h3 class="text-xl font-bold uppercase mt-2 mb-4">Discovery</h3>
+                <p class="text-slate-600 text-sm leading-relaxed font-light">We collaborate with you or your project manager to understand the lighting, specs, and level of finish required for the site.</p>
             </div>
 
             <!-- Step 02 -->
-            <div class="group">
-                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100">
-                    <img src="https://images.unsplash.com/photo-1621905235858-62bfd732ee19?auto=format&fit=crop&q=80&w=800" 
-                         alt="The Craft" 
-                         class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700 scale-105 group-hover:scale-100">
+            <div class="process-card group">
+                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7edd?q=80&w=1000&auto=format&fit=crop" 
+                         alt="Craft" 
+                         class="process-img w-full h-full object-cover grayscale md:group-hover:grayscale-0 transition duration-1000">
                 </div>
                 <span class="text-xs font-bold text-orange-600 tracking-widest uppercase">Step 02</span>
-                <h3 class="text-xl font-bold uppercase mt-2 mb-4 tracking-tight">Craft</h3>
-                <p class="text-slate-600 text-sm leading-relaxed font-light">Our fixing and stopping crews execute with meticulous detail. Using premium compounds and machine-sanding, we prepare a flawless canvas for the final stages.</p>
+                <h3 class="text-xl font-bold uppercase mt-2 mb-4">Craft</h3>
+                <p class="text-slate-600 text-sm leading-relaxed font-light">Our fixing and stopping crews execute with meticulous detail, using premium compounds to prepare a flawless canvas.</p>
             </div>
 
             <!-- Step 03 -->
-            <div class="group">
-                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100">
-                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=800" 
-                         alt="The Delivery" 
-                         class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700 scale-105 group-hover:scale-100">
+            <div class="process-card group">
+                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1000&auto=format&fit=crop" 
+                         alt="Delivery" 
+                         class="process-img w-full h-full object-cover grayscale md:group-hover:grayscale-0 transition duration-1000">
                 </div>
                 <span class="text-xs font-bold text-orange-600 tracking-widest uppercase">Step 03</span>
-                <h3 class="text-xl font-bold uppercase mt-2 mb-4 tracking-tight">Delivery</h3>
-                <p class="text-slate-600 text-sm leading-relaxed font-light">The vision brought to life. Through high-end architectural painting, we deliver a paint-ready finish that stands up to the most critical lighting and inspection.</p>
+                <h3 class="text-xl font-bold uppercase mt-2 mb-4">Delivery</h3>
+                <p class="text-slate-600 text-sm leading-relaxed font-light">The vision brought to life. We deliver a paint-ready finish that stands up to the most critical architectural lighting.</p>
             </div>
 
         </div>
     </section>
+
+    <!-- Mobile Scroll Trigger Script -->
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '-30% 0% -30% 0%', // Only triggers when image is in the middle 40% of the screen
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const img = entry.target.querySelector('.process-img');
+                if (entry.isIntersecting) {
+                    img.classList.remove('grayscale');
+                } else {
+                    img.classList.add('grayscale');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.process-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+    
     <!-- Reviews Section (The Request) -->
     <section class="bg-slate-50 py-32 px-6">
         <div class="max-w-5xl mx-auto">
