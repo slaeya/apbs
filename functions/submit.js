@@ -18,8 +18,8 @@ export async function onRequestPost(context) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "APBS Website <website@advancedplasterboardsolutions.co.nz>",
-        to: ["your-email@advancedplasterboardsolutions.co.nz"], // Your actual email
+        from: "Website Inquiry <website@advancedplasterboardsolutions.co.nz>",
+        to: ["info@advancedplasterboardsolutions.co.nz"], // Your actual email
         subject: `New Project Enquiry: ${name}`,
         html: `
           <h3>New Website Enquiry</h3>
