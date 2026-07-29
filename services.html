@@ -1,40 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
     <meta charset="UTF-8">
-    <title>Services | Gib Fixing, Stopping & Painting | APBS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Advanced Plasterboard Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-white text-slate-900 font-['Inter']">
-    <!-- (Include same Nav as above) -->
-    
+
+    <!-- Header (Same on all pages) -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-lg md:text-xl font-bold tracking-tighter uppercase">
+                ADVANCED <span class="text-orange-600">PLASTERBOARD</span>
+            </a>
+            <!-- Mobile "Enquire" Button -->
+            <a href="contact.html" class="md:hidden bg-slate-900 text-white px-3 py-1.5 rounded text-xs font-bold uppercase">Enquire</a>
+            <!-- Desktop Links -->
+            <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-widest text-slate-600">
+                <a href="index.html" class="hover:text-orange-600">Home</a>
+                <a href="services.html" class="text-orange-600">Services</a>
+                <a href="gallery.html" class="hover:text-orange-600">Portfolio</a>
+                <a href="contact.html" class="bg-slate-900 text-white px-5 py-2 rounded-sm hover:bg-orange-600 transition">Enquire Now</a>
+            </div>
+        </div>
+    </nav>
+
     <section class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
-        <h2 class="text-4xl font-bold mb-12">Our Specialist Services</h2>
+        <h1 class="text-4xl font-bold mb-4 uppercase tracking-tight">Our Services</h1>
+        <div class="h-1 w-20 bg-orange-600 mb-12"></div>
         
-        <div class="grid md:grid-cols-2 gap-16">
-            <div class="space-y-6">
-                <h3 class="text-2xl font-bold text-orange-600">Gib Fixing & Specialized Lining</h3>
-                <p class="text-slate-600 italic">Precision installation for structural integrity.</p>
-                <p class="leading-relaxed">We provide expert installation of GIB® products and other major manufacturers. From standard residential linings to complex architectural curves and Villa Board for wet areas, our fixing is the foundation of a perfect finish.</p>
-                <ul class="list-disc pl-5 space-y-2 text-slate-700">
-                    <li>Residential & Commercial Fit-outs</li>
-                    <li>Fire-rated Systems</li>
-                    <li>Villa Board & Aqua-line installation</li>
-                </ul>
+        <!-- Grid: 1 column on mobile (default), 2 columns on medium screens (md:) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
+            <div class="space-y-4 border-l-4 border-slate-100 pl-6">
+                <h3 class="text-2xl font-bold text-slate-800 uppercase">Gib Fixing</h3>
+                <p class="text-slate-600 leading-relaxed">Precision installation of GIB® and other specialty linings. We ensure every sheet is fixed to manufacturer standards, providing a structurally sound base for the stopping stage.</p>
+            </div>
+            
+            <div class="space-y-4 border-l-4 border-slate-100 pl-6">
+                <h3 class="text-2xl font-bold text-slate-800 uppercase">Gib Stopping</h3>
+                <p class="text-slate-600 leading-relaxed">Specialists in Level 4 and Level 5 finishes. We use the latest sanding technology to ensure seamless joins and blemish-free surfaces, even under critical architectural lighting.</p>
             </div>
 
-            <div class="space-y-6">
-                <h3 class="text-2xl font-bold text-orange-600">Gib Stopping (Level 4 & 5)</h3>
-                <p class="text-slate-600 italic">The art of the invisible joint.</p>
-                <p class="leading-relaxed text-slate-700">Our stoppers specialize in high-light areas requiring a Level 5 finish. We use premium compounds and machine-sanding technology to ensure blemish-free walls that stand up to the most critical inspection.</p>
+            <div class="space-y-4 border-l-4 border-slate-100 pl-6">
+                <h3 class="text-2xl font-bold text-slate-800 uppercase">Painting</h3>
+                <p class="text-slate-600 leading-relaxed">Professional internal and external painting. We manage the transition from stopping to painting ourselves to ensure the quality of the finish is never compromised.</p>
             </div>
 
-            <div class="space-y-6">
-                <h3 class="text-2xl font-bold text-orange-600">Premium Painting</h3>
-                <p class="text-slate-600 italic">Internal and External Protection.</p>
-                <p class="leading-relaxed text-slate-700">A full-service solution. By managing the painting ourselves, we ensure the quality of the stopping is perfectly preserved through to the final coat. We work with Resene and Dulux systems to provide a luxury finish.</p>
+            <div class="space-y-4 border-l-4 border-slate-100 pl-6">
+                <h3 class="text-2xl font-bold text-slate-800 uppercase">Villa Board</h3>
+                <p class="text-slate-600 leading-relaxed">Specialized wet-area linings for bathrooms, laundries, and commercial kitchens. Highly durable and moisture-resistant solutions.</p>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 px-6 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-sm font-bold uppercase">APBS <span class="text-slate-500 font-normal ml-2">Limited</span></div>
+            <div class="text-slate-500 text-[10px] uppercase tracking-widest">&copy; 2024 Advanced Plasterboard Solutions.</div>
+            <div class="text-sm">apbs.nz</div>
+        </div>
+    </footer>
 </body>
 </html>
