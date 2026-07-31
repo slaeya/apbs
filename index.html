@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Plasterboard Solutions | Premium Interior Finishes Auckland</title>
+    <title>Advanced Plasterboard Solutions | High-End Interior Finishes Auckland</title>
+    <meta name="description" content="Auckland's specialists in premium Gib fixing, level 5 stopping, and architectural painting for high-end residential and commercial projects.">
+    
+    <!-- Tailwind CSS & Google Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
     <style>
         body { font-family: 'Inter', sans-serif; }
         .hero-split { min-height: 85vh; }
@@ -17,119 +21,194 @@
     <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Stacked Logo -->
             <a href="index.html" class="flex flex-col leading-none group">
-                <span class="text-lg md:text-xl font-bold tracking-tighter uppercase italic leading-none">
+                <span class="text-lg md:text-xl font-bold tracking-tighter uppercase italic leading-none text-slate-900">
                     ADVANCED <span class="text-orange-600 font-black">PLASTERBOARD</span>
                 </span>
                 <span class="text-[9px] md:text-[10px] font-bold uppercase tracking-[0.5em] text-slate-400 group-hover:text-orange-600 transition mt-1">
                     SOLUTIONS
                 </span>
             </a>
+
+            <!-- Desktop Links -->
             <div class="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500">
                 <a href="services.html" class="hover:text-orange-600 transition">Services</a>
                 <a href="gallery.html" class="hover:text-orange-600 transition">Projects</a>
                 <a href="contact.html" class="bg-slate-900 text-white px-6 py-3 rounded-sm hover:bg-orange-600 transition">Get Started</a>
             </div>
-            <a href="contact.html" class="md:hidden bg-slate-900 text-white px-4 py-2 text-xs font-bold uppercase">Enquire</a>
+
+            <!-- Mobile CTA -->
+            <a href="contact.html" class="md:hidden bg-slate-900 text-white px-4 py-2 text-xs font-bold uppercase">Enquire Now</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-split pt-20 grid md:grid-cols-2 gap-0 overflow-hidden">
-        <div class="bg-slate-50 flex flex-col justify-center px-8 md:px-20 py-24">
-            <span class="text-orange-600 font-bold tracking-[0.3em] uppercase text-xs mb-6 text-orange-600">Bespoke Interior Linings</span>
-            <h1 class="text-5xl md:text-7xl font-bold leading-[1.1] mb-8 tracking-tighter">We finish every wall like it's <span class="italic text-slate-400 font-light">our own.</span></h1>
-            <p class="text-lg text-slate-600 mb-10 max-w-md leading-relaxed font-light">Precision Gib fixing, level 5 stopping, and architectural painting for Auckland's most distinctive residential and commercial spaces.</p>
+    <!-- Hero Section (Bosanac Split-Style) -->
+    <section class="hero-split pt-20 grid grid-cols-1 md:grid-cols-2 gap-0 overflow-hidden">
+        
+        <!-- Left Side: Text Content -->
+        <div class="bg-slate-50 flex flex-col justify-center px-8 md:px-20 py-16 md:py-24">
+            <span class="text-orange-600 font-bold tracking-[0.3em] uppercase text-[10px] mb-6">
+                Bespoke Interior Linings
+            </span>
+            <h1 class="text-5xl md:text-7xl font-bold leading-[1.1] mb-8 tracking-tighter text-slate-900">
+                We finish every wall like it's <span class="italic text-slate-400 font-light underline decoration-orange-600/20">our own.</span>
+            </h1>
+            <p class="text-lg text-slate-600 mb-10 max-w-md leading-relaxed font-light">
+                Precision Gib fixing, level 5 stopping, and architectural painting for Auckland's most distinctive residential and commercial spaces.
+            </p>
             <div>
                 <!--    <a href="gallery.html" class="border-b-2 border-slate-900 pb-2 font-bold uppercase tracking-widest text-[10px] hover:text-orange-600 hover:border-orange-600 transition">View Portfolio</a> -->
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200" alt="Featured Project" class="absolute inset-0 w-full h-full object-cover">
+                <a href="gallery.html" class="border-b-2 border-slate-900 pb-2 font-bold uppercase tracking-widest text-[10px] hover:text-orange-600 hover:border-orange-600 transition">
+                    View Our Portfolio
+                </a>
             </div>
         </div>
-        <div class="relative min-h-[400px]">
-            <img src="./assets/delivery.jpg" alt="Featured Project" class="absolute inset-0 w-full h-full object-cover">
+
+        <!-- Right Side: Hero Image -->
+        <div class="relative min-h-[400px] md:min-h-full">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200" 
+                 alt="Featured Project - Advanced Plasterboard Solutions" 
+                 class="absolute inset-0 w-full h-full object-cover">
         </div>
+        
     </section>
 
-    <!-- The Journey -->
-    <section class="py-32 px-6 max-w-7xl mx-auto">
+    <!-- The Journey Section -->
+    <section class="py-32 px-6 max-w-7xl mx-auto overflow-hidden">
         <div class="text-center mb-24">
-            <h2 class="text-3xl font-bold uppercase tracking-[0.3em] mb-4 text-slate-900">The Journey</h2>
-            <p class="text-slate-400 font-light tracking-widest uppercase text-[10px] italic">Authentic Craftsmanship from start to finish</p>
+            <h2 class="text-3xl font-bold uppercase tracking-[0.3em] mb-4 text-slate-900 leading-none">The Journey</h2>
+            <p class="text-slate-400 font-light tracking-widest uppercase text-[10px] italic">Precision from start to finish</p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-24">
+            
             <!-- Step 01 -->
             <div class="process-card group">
-                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100 shadow-sm">
-                    <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=800">
-                    <!-- <img src="./assets/discovery.jpg" alt="Discovery" class="process-img w-full h-full object-cover grayscale md:group-hover:grayscale-0"> -->
+                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100 shadow-sm relative">
+                    <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         alt="Discovery" 
+                         class="process-img w-full h-full object-cover grayscale md:group-hover:grayscale-0 transition duration-1000">
                 </div>
                 <span class="text-[10px] font-bold text-orange-600 tracking-[0.3em] uppercase">Step 01</span>
-                <h3 class="text-xl font-bold uppercase mt-3 mb-4 tracking-tight">Discovery</h3>
-                <p class="text-slate-500 text-sm leading-relaxed font-light">Collaborating with builders to ensure framing and specs are perfect before board installation begins.</p>
+                <h3 class="text-xl font-bold uppercase mt-3 mb-4 tracking-tight text-slate-800">Discovery</h3>
+                <p class="text-slate-500 text-sm leading-relaxed font-light">Collaborating with builders and architects to ensure framing and specs are perfect before board installation begins.</p>
             </div>
+
             <!-- Step 02 -->
             <div class="process-card group">
-                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100 shadow-sm">
-                    <img src="https://images.pexels.com/photos/8005397/pexels-photo-8005397.jpeg?auto=compress&cs=tinysrgb&w=800">
-                    <!-- <img src="./assets/craft.jpg" alt="Craft" class="process-img w-full h-full object-cover grayscale md:group-hover:grayscale-0"> -->
+                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100 shadow-sm relative">
+                    <img src="https://images.pexels.com/photos/8005397/pexels-photo-8005397.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         alt="Craft" 
+                         class="process-img w-full h-full object-cover grayscale md:group-hover:grayscale-0 transition duration-1000">
                 </div>
                 <span class="text-[10px] font-bold text-orange-600 tracking-[0.3em] uppercase">Step 02</span>
-                <h3 class="text-xl font-bold uppercase mt-3 mb-4 tracking-tight">Craft</h3>
-                <p class="text-slate-500 text-sm leading-relaxed font-light">Meticulous fixing and level 5 stopping using premium compounds for a seamless, paint-ready surface.</p>
+                <h3 class="text-xl font-bold uppercase mt-3 mb-4 tracking-tight text-slate-800">Craft</h3>
+                <p class="text-slate-500 text-sm leading-relaxed font-light">Meticulous fixing and level 5 stopping using premium compounds for a seamless, paint-ready surface that stands up to critical lighting.</p>
             </div>
+
             <!-- Step 03 -->
             <div class="process-card group">
-                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100 shadow-sm">
-                    <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800">
-                    <!-- <img src="./assets/delivery.jpg" alt="Delivery" class="process-img w-full h-full object-cover grayscale md:group-hover:grayscale-0"> -->
+                <div class="aspect-[4/5] overflow-hidden mb-8 bg-slate-100 shadow-sm relative">
+                    <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         alt="Delivery" 
+                         class="process-img w-full h-full object-cover grayscale md:group-hover:grayscale-0 transition duration-1000">
                 </div>
                 <span class="text-[10px] font-bold text-orange-600 tracking-[0.3em] uppercase">Step 03</span>
-                <h3 class="text-xl font-bold uppercase mt-3 mb-4 tracking-tight">Delivery</h3>
-                <p class="text-slate-500 text-sm leading-relaxed font-light">The vision brought to life with architectural painting that stands up to the most critical inspection.</p>
+                <h3 class="text-xl font-bold uppercase mt-3 mb-4 tracking-tight text-slate-800">Delivery</h3>
+                <p class="text-slate-500 text-sm leading-relaxed font-light">The vision brought to life. We deliver a high-end finish ready for handover, leaving the site clean and the walls flawless.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Client Reviews Section -->
+    <section class="bg-slate-50 py-32 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl font-bold uppercase tracking-[0.2em] text-slate-900">Client Experiences</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Review 1 -->
+                <div class="bg-white p-10 shadow-sm border border-slate-100">
+                    <p class="text-lg italic text-slate-700 mb-8 leading-relaxed font-light">"The team at Advanced Plasterboard Solutions provided amazing advice. They delivered a result that exceeded our expectations for our new home."</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="h-10 w-1 bg-orange-600"></div>
+                        <div>
+                            <p class="font-bold uppercase text-[10px] tracking-widest text-slate-900">Jess & Paul</p>
+                            <p class="text-slate-400 text-[10px] uppercase tracking-widest mt-1">Residential Project</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-10 shadow-sm border border-slate-100">
+                    <p class="text-lg italic text-slate-700 mb-8 leading-relaxed font-light">"Managing commercial fit-outs is about timelines. Advanced Plasterboard Solutions were professional, easy to deal with, and treated the site with respect."</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="h-10 w-1 bg-orange-600"></div>
+                        <div>
+                            <p class="font-bold uppercase text-[10px] tracking-widest text-slate-900">Mark S.</p>
+                            <p class="text-slate-400 text-[10px] uppercase tracking-widest mt-1">Commercial Project Manager</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Reviews -->
-    <section class="bg-slate-50 py-32 px-6">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-2xl font-bold uppercase tracking-[0.2em]">Client Experiences</h2>
-            </div>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="bg-white p-10 shadow-sm border border-slate-100">
-                    <p class="text-lg italic text-slate-700 mb-8 leading-relaxed font-light">"The team at Advanced Plasterboard Solutions delivered a result that exceeded our expectations for our new home."</p>
-                    <p class="font-bold uppercase text-[10px] tracking-widest text-orange-600">Jess & Paul</p>
-                </div>
-                <div class="bg-white p-10 shadow-sm border border-slate-100">
-                    <p class="text-lg italic text-slate-700 mb-8 leading-relaxed font-light">"Professional, easy to deal with, and treated the site with total respect. We wouldn't use anyone else."</p>
-                    <p class="font-bold uppercase text-[10px] tracking-widest text-orange-600">Mark S. - Project Manager</p>
-                </div>
-            </div>
-        </div>
+    <!-- Call to Action -->
+    <section class="py-32 px-6 text-center">
+        <h2 class="text-4xl font-bold mb-8 uppercase tracking-tighter leading-tight text-slate-900">
+            Plan your project, <br> <span class="text-slate-300 font-light italic">starting with us.</span>
+        </h2>
+        <a href="contact.html" class="inline-block bg-slate-900 text-white px-12 py-5 font-bold uppercase tracking-widest text-[11px] hover:bg-orange-600 transition shadow-xl">
+            Get a Free Quote
+        </a>
     </section>
 
     <!-- Footer -->
     <footer class="bg-white py-12 px-6 border-t border-slate-100">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
             <div class="text-[9px] font-bold uppercase tracking-widest text-slate-400">
-                &copy; 2024 Advanced Plasterboard Solutions Limited.
+                &copy; 2024 Advanced Plasterboard Solutions Limited. Auckland, NZ.
             </div>
             <div class="flex space-x-10 text-[9px] font-bold uppercase tracking-widest text-slate-400">
-                <a href="services.html">Services</a>
-                <a href="gallery.html">Projects</a>
-                <a href="contact.html">Contact</a>
+                <a href="services.html" class="hover:text-slate-900">Services</a>
+                <a href="gallery.html" class="hover:text-slate-900">Portfolio</a>
+                <a href="contact.html" class="hover:text-slate-900">Contact</a>
             </div>
         </div>
     </footer>
 
+    <!-- Mobile Scroll Color Script -->
     <script>
-        const observerOptions = { root: null, rootMargin: '-25% 0% -25% 0%', threshold: 0.2 };
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0% -20% 0%', 
+            threshold: 0.2
+        };
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 const img = entry.target.querySelector('.process-img');
                 if (window.innerWidth < 768) {
                     if (entry.isIntersecting) {
                         img.classList.remove('grayscale');
-                        img.style.trans
+                        img.style.transform = "scale(1.05)";
+                    } else {
+                        img.classList.add('grayscale');
+                        img.style.transform = "scale(1)";
+                    }
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.process-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+
+</body>
+</html>
+                
